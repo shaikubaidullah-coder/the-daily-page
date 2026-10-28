@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>the daily page</title>
+    <meta name="description" content="A quiet place to turn through the pages." />
+    <link rel="icon" type="image/png" href="/assets/flowers-top-right.png" />
+
+    <!-- Font Preloads -->
+    <link rel="preload" href="/fonts/homemade-apple.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/tangerine-bold.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+    <link rel="preload" href="/fonts/Windlass.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    <!-- Scene & Journal Preloads -->
+    <link rel="preload" href="/assets/fur.png" as="image" />
+    <link rel="preload" href="/assets/overlay.png" as="image" />
+    <link rel="preload" href="/assets/lace-tile.png" as="image" />
+    <link rel="preload" href="/assets/clip.png" as="image" />
+    <link rel="preload" href="/assets/bookmark.png" as="image" />
+  </head>
+  <body>
+    <!-- SVG Clip Paths for Heart Lockets -->
+    <svg width="0" height="0" style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+      <defs>
+        <clipPath id="locket-heart-clip" clipPathUnits="objectBoundingBox">
+          <path d="M 0.5, 0.25 C 0.44, 0.14 0.34, 0.06 0.22, 0.06 C 0.08, 0.06 0.01, 0.19 0.01, 0.36 C 0.01, 0.60 0.28, 0.77 0.5, 0.95 C 0.72, 0.77 0.99, 0.60 0.99, 0.36 C 0.99, 0.19 0.92, 0.06 0.78, 0.06 C 0.66, 0.06 0.56, 0.14 0.5, 0.25 Z" />
+        </clipPath>
+        <clipPath id="floral-heart-clip" clipPathUnits="objectBoundingBox">
+          <path d="M 0.5, 0.26 C 0.44, 0.12 0.30, 0.04 0.18, 0.04 C 0.06, 0.04 0, 0.18 0, 0.36 C 0, 0.62 0.28, 0.80 0.5, 0.98 C 0.72, 0.80 1, 0.62 1, 0.36 C 1, 0.18 0.94, 0.04 0.82, 0.04 C 0.70, 0.04 0.56, 0.12 0.5, 0.26 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
